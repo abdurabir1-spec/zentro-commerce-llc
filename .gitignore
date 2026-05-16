@@ -1,0 +1,12 @@
+.next/
+node_modules/
+.codex-tools/
+.git-tools/
+
+*.log
+*.tsbuildinfo
+.env
+.env*.local
+visual-desktop.png
+visual-mobile.png
+zentro-commerce/
