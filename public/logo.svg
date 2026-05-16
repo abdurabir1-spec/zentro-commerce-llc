@@ -1,0 +1,32 @@
+<svg width="340" height="88" viewBox="0 0 340 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="340" height="88" rx="18" fill="none"/>
+  <g filter="url(#shadow)">
+    <rect x="6" y="10" width="66" height="66" rx="18" fill="#090807"/>
+    <rect x="7" y="11" width="64" height="64" rx="17" stroke="url(#frame)" stroke-width="2"/>
+    <path d="M22 28H53L35 60H56" stroke="#E8E1D2" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M51 28H59V36" stroke="#BB9457" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 60H31" stroke="#BB9457" stroke-width="4.7" stroke-linecap="round"/>
+  </g>
+  <text x="92" y="38" fill="#E8E1D2" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" letter-spacing="5">ZENTRO</text>
+  <text x="94" y="61" fill="#BB9457" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" letter-spacing="4">COMMERCE LLC</text>
+  <path d="M244 33H319" stroke="#E8E1D2" stroke-width="2" stroke-linecap="round" opacity="0.62"/>
+  <path d="M244 46H302" stroke="#BB9457" stroke-width="2" stroke-linecap="round" opacity="0.82"/>
+  <path d="M244 59H326" stroke="#E8E1D2" stroke-width="2" stroke-linecap="round" opacity="0.36"/>
+  <defs>
+    <linearGradient id="frame" x1="12" y1="16" x2="68" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE6A7"/>
+      <stop offset="0.52" stop-color="#BB9457"/>
+      <stop offset="1" stop-color="#6F1D1B"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="4" width="84" height="84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="3" dy="3"/>
+      <feGaussianBlur stdDeviation="4"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.733 0 0 0 0 0.58 0 0 0 0 0.341 0 0 0 0.24 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1" result="shape"/>
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --page-bg: #090807;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--page-bg);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 230, 167, 0.035), transparent 18rem),
+    radial-gradient(circle at 8% 4%, rgba(187, 148, 87, 0.13), transparent 24rem),
+    radial-gradient(circle at 92% 14%, rgba(111, 29, 27, 0.22), transparent 30rem),
+    linear-gradient(180deg, #090807 0%, #11100e 46%, #080706 100%);
+  color: #e8e1d2;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(187, 148, 87, 0.42);
+  color: #fff6de;
+}
+
+.hero-photo {
+  background-image:
+    linear-gradient(90deg, rgba(9, 8, 7, 0.96) 0%, rgba(9, 8, 7, 0.78) 43%, rgba(9, 8, 7, 0.36) 100%),
+    linear-gradient(180deg, rgba(9, 8, 7, 0.32), rgba(9, 8, 7, 0.96)),
+    url("https://images.unsplash.com/photo-1586528116493-a029325540fa?auto=format&fit=crop&w=2400&q=86");
+  background-position: center;
+  background-size: cover;
+}
+
+.gold-line {
+  background: linear-gradient(90deg, transparent, rgba(187, 148, 87, 0.72), transparent);
+}
+
+.luxury-border {
+  border: 1px solid rgba(232, 225, 210, 0.11);
+}
+
+.glass-panel {
+  background:
+    linear-gradient(145deg, rgba(232, 225, 210, 0.088), rgba(232, 225, 210, 0.026)),
+    linear-gradient(180deg, rgba(187, 148, 87, 0.08), rgba(111, 29, 27, 0.08));
+  border: 1px solid rgba(232, 225, 210, 0.12);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(22px);
+}
+
+.section-fade {
+  position: relative;
+}
+
+.section-fade::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(232, 225, 210, 0.032), transparent 24%, transparent 74%, rgba(111, 29, 27, 0.08)),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0 1px, transparent 1px 124px);
+  mask-image: linear-gradient(180deg, transparent, black 12%, black 88%, transparent);
+}
+
+.reveal {
+  animation: fade-up 0.72s ease-out both;
+}
+
+.executive-grid {
+  background-image:
+    linear-gradient(rgba(232, 225, 210, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 225, 210, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.fine-noise {
+  position: relative;
+}
+
+.fine-noise::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  opacity: 0.18;
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(255,255,255,0.16) 0 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.08) 0 1px, transparent 1px);
+  background-size: 18px 18px, 26px 26px;
+  mix-blend-mode: overlay;
+}
