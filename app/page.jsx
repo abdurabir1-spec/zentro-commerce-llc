@@ -315,15 +315,15 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                <div className="mt-7 grid min-w-0 grid-cols-1 gap-3 sm:grid-cols-3">
+                <div className="mt-7 grid w-full min-w-0 grid-cols-1 gap-3 md:grid-cols-3">
                   {[
                     ["Retail channel", "Amazon"],
                     ["Expansion", "Walmart"],
                     ["Focus", "Wholesale"],
                   ].map(([label, value]) => (
-                    <div key={label} className="min-w-0 overflow-hidden rounded-2xl border border-champagne/16 bg-champagne/[0.075] p-4">
-                      <p className="break-words text-[0.62rem] font-extrabold uppercase leading-relaxed tracking-[0.14em] text-champagne/90 [overflow-wrap:anywhere] sm:tracking-[0.22em]">{label}</p>
-                      <p className="mt-3 break-words text-sm font-bold leading-relaxed text-smoke [overflow-wrap:anywhere]">{value}</p>
+                    <div key={label} className="w-full min-w-0 rounded-2xl border border-champagne/16 bg-champagne/[0.075] p-4">
+                      <p className="whitespace-normal break-words text-[0.62rem] font-extrabold uppercase leading-relaxed tracking-[0.14em] text-champagne/90 [overflow-wrap:anywhere] md:tracking-[0.22em]">{label}</p>
+                      <p className="mt-3 whitespace-normal break-words text-sm font-bold leading-relaxed text-smoke [overflow-wrap:anywhere]">{value}</p>
                     </div>
                   ))}
                 </div>
