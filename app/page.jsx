@@ -290,16 +290,16 @@ export default function HomePage() {
             </div>
           </div>
 
-          <aside className="reveal relative ml-auto w-full max-w-xl [animation-delay:140ms]">
+          <aside className="reveal relative mx-auto w-full min-w-0 max-w-xl [animation-delay:140ms] lg:ml-auto">
             <div className="absolute -inset-5 rounded-[2.4rem] bg-gradient-to-br from-champagne/18 via-smoke/5 to-oxblood/20 blur-2xl" />
             <div className="glass-panel relative overflow-hidden rounded-[2rem] p-5">
-              <div className="rounded-[1.45rem] border border-smoke/10 bg-graphite/82 p-6 shadow-premium">
+              <div className="min-w-0 rounded-[1.45rem] border border-smoke/10 bg-graphite/82 p-5 shadow-premium sm:p-6">
                 <div className="flex items-start justify-between gap-5">
-                  <div>
-                    <p className="text-[0.68rem] font-extrabold uppercase tracking-[0.32em] text-champagne">
+                  <div className="min-w-0">
+                    <p className="break-words text-[0.68rem] font-extrabold uppercase tracking-[0.18em] text-champagne [overflow-wrap:anywhere] sm:tracking-[0.32em]">
                       Operational profile
                     </p>
-                    <h2 className="mt-3 font-display text-4xl font-semibold leading-none text-smoke">
+                    <h2 className="mt-3 break-words font-display text-4xl font-semibold leading-none text-smoke [overflow-wrap:anywhere]">
                       Professional Marketplace Retail Operations
                     </h2>
                   </div>
@@ -315,15 +315,15 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-3">
+                <div className="mt-7 grid min-w-0 grid-cols-1 gap-3 sm:grid-cols-3">
                   {[
                     ["Retail channel", "Amazon"],
                     ["Expansion", "Walmart"],
                     ["Focus", "Wholesale"],
                   ].map(([label, value]) => (
-                    <div key={label} className="min-w-0 rounded-2xl border border-champagne/16 bg-champagne/[0.075] p-4">
-                      <p className="break-words text-[0.62rem] font-extrabold uppercase tracking-[0.22em] text-champagne/90 [overflow-wrap:anywhere]">{label}</p>
-                      <p className="mt-3 break-words text-sm font-bold text-smoke [overflow-wrap:anywhere]">{value}</p>
+                    <div key={label} className="min-w-0 overflow-hidden rounded-2xl border border-champagne/16 bg-champagne/[0.075] p-4">
+                      <p className="break-words text-[0.62rem] font-extrabold uppercase leading-relaxed tracking-[0.14em] text-champagne/90 [overflow-wrap:anywhere] sm:tracking-[0.22em]">{label}</p>
+                      <p className="mt-3 break-words text-sm font-bold leading-relaxed text-smoke [overflow-wrap:anywhere]">{value}</p>
                     </div>
                   ))}
                 </div>
